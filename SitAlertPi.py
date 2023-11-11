@@ -12,7 +12,7 @@ PIN_output_LED_r = 16
 PIN_output_LED_b = 20
 
 # Define your Distance from your desk to the floor
-def_distance =  900 # Better higher value than lower value! Note tolerance +/- of approx. 20 mm | in mm
+def_distance =  810 # Note tolerance +/- of approx. 20 mm | in mm
 
 # Speed and duration of blue light
 duration = 2
