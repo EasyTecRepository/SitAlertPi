@@ -1,0 +1,29 @@
+#! /bin/sh
+# based on: https://tutorials-raspberrypi.de/raspberry-pi-autostart-programm-skript/
+### BEGIN INIT INFO
+# Provides: SitAlertPi
+# Required-Start: $syslog
+# Required-Stop: $syslog
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: SitAlertPi
+# Description:
+### END INIT INFO
+ 
+case "$1" in
+    start)
+        echo "start SitAlertPi..."
+        # start program
+        python3 /home/{YOUR USERNAME}/SitAlertPi.py
+        ;;
+    stop)
+        echo "stop SitAlertPi..."
+        # stop program
+        pkill -f "/home/{YOUR USERNAME}/SitAlertPi.py"
+        ;;
+    *)
+        echo "Usage: SitAlertPi {start|stop}"
+        exit 1
+        ;;
+esac
+ 
