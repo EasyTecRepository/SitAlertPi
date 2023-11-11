@@ -19,7 +19,7 @@ duration = 2
 speed = 0.08
 
 # Time before stand-up
-time_before_stand_up =  5 # in seconds | default: 30 min (18000 s)
+time_before_stand_up =  18000 # in seconds | default: 30 min (18000 s)
 
 ### PLEASE DO NOT ADJUST ###
 
