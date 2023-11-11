@@ -20,6 +20,7 @@ case "$1" in
         echo "stop SitAlertPi..."
         # stop program
         pkill -f "/home/{YOUR USERNAME}/SitAlertPi.py"
+        python3 /home/{YOUR USERNAME}/gpio_cleanup.py
         ;;
     *)
         echo "Usage: SitAlertPi {start|stop}"
